@@ -164,21 +164,21 @@
 		<h3>ScaleLight</h3>
 		 
 		 <p>This ScaleLight MyBlock allows us to read the
-		 raw values that a selected light sensor currently
+		 values that a selected light sensor currently
 		 sees and either output them directly or use a
 		 formula to convert them to a reading in a range from
-		0 being white to 1000 being black (based on our
+		0 being black to 100 being white (based on our
 		values for white and black collected in calibration)
 		and then output them.
 		The equation we created to scale our light readings uses 
 		variables for the minimum and maximum raw light readings collected 
 		in calibration. Inputting the minimum raw light 
-		reading (white) outputs a value of 0, and the maximum raw
-		light reading (black) outputs a value of 1000. With 
+		reading (black) outputs a value of 0, and the maximum raw
+		light reading (white) outputs a value of 100. With 
 		these two pairs of coordinates, we identified a linear function.
-		When you input the current raw light value the linear function will scale it
+		When you input the current light value the linear function will scale it
 		to some point in the range and output a usable calibrated
-		value from 0 to 1000.</p>
+		value from 0 to 100.</p>
 		
 		<p>Returned light reading by the block = 1000*
 		(current raw light value – min) / (max – min)</p>
