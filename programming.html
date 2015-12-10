@@ -180,8 +180,8 @@
 		to some point in the range and output a usable calibrated
 		value from 0 to 100.</p>
 		
-		<p>Returned light reading by the block = 1000*
-		(current raw light value – min) / (max – min)</p>
+		<p>Returned light reading by the block = 100*
+		(current light value – min) / (max – min)</p>
 		<br>
 		<img src="images/robot/scalelight.jpg"></img>
 		<br>
@@ -192,7 +192,7 @@
 		program is a smoother way to line follow that adjusts
 		the power levels of motors B and C proportionally to 
 		the distance from the edge of the line, which would
-		have a light value of 500. It takes into account the 
+		have a light value of 50. It takes into account the 
 		error (the difference between the optimal and current
 		light sensor reading), the integral (the sum of all 
 		errors), and the derivative (the difference between 
@@ -230,7 +230,9 @@
 		travelled by each drive motor and constantly adjusts their 
 		speeds to maintain the predetermined ratio of the 
 		distance travelled by motors B and C. This MyBlock also allows for
-		more accurate robot arc turns.
+		more accurate robot arc turns, acceleration at the beginning of the movement and
+		deceleration at the end.
+		
 		</p>
 		
 		<img src="images/robot/zmove.jpg"></img>
