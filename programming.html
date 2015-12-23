@@ -108,7 +108,7 @@
 			
 			<li>We make frequent use of our square up 
 			subroutine which allows the robot to position 
-			itself perpendicularly to any black or green line (from
+			itself perpendicularly to any line (from
 			virtually any angle of attack)</li>
 			
 			<li>Our MyBlocks and variables are given 
@@ -123,7 +123,7 @@
 			When that exit condition is met, the program
 			immediately exits that loop causing the robot to 
 			advance to the next robot maneuver. For example, stop
-			the robot when light sensor 4 sees a black
+			the robot when one of the light sensors a black
 			line.</li>
 			
 			<li>Our "Check-Abort" MyBlock constantly checks 
@@ -169,7 +169,7 @@
 		 values that a selected light sensor currently
 		 sees and either output them directly or use a
 		 formula to convert them to a reading in a range from
-		0 being black to 100 being white (based on our
+		0, being black, to 100, being white, (based on our
 		values for white and black collected in calibration)
 		and then output them.
 		The equation we created to scale our light readings uses 
@@ -178,7 +178,7 @@
 		reading (black) outputs a value of 0, and the maximum raw
 		light reading (white) outputs a value of 100. With 
 		these two pairs of coordinates, we identified a linear function.
-		When you input the current light value the linear function will scale it
+		When you input the current light value, the linear function will scale it
 		to some point in the range and output a usable calibrated
 		value from 0 to 100.</p>
 		
@@ -210,8 +210,8 @@
 
 		<p>This selection program allows us to quickly and 
 		efficiently switch programs/missions 
-		during the two-and-a half minute match. 
-		Our selection program contains MyBlocks, each contains one of our missions.
+		during the two-and-a-half minute match. 
+		Our selection program contains MyBlocks, each containing one of our missions.
 		The user of the robot simply starts the selection 
 		program and clicks the centre button to start the first
 		mission. Then, when the mission finishes, the robot 
@@ -231,7 +231,7 @@
 		our program continuously measures the distances 
 		travelled by each drive motor and constantly adjusts their 
 		speeds to maintain the predetermined ratio of the 
-		distance travelled by motors B and C. This MyBlock also allows for
+		distance to be travelled by each drive motor. This MyBlock also allows for
 		more accurate robot arc turns, acceleration at the beginning of the movement and
 		deceleration at the end.
 		
