@@ -33,10 +33,18 @@ img.ctv {
 	margin-bottom: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
-	width:420px;
-	height:315px;
+	width:426px;
+	height:231px;
 }
 
+img.ctv2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	width:656px;
+	height:376px;
+}
 
 img.small_img_vertical {
 	margin-top: 5px;
